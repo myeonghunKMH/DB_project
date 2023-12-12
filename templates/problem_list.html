@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>문제 페이지</title>
+  </head>
+  <body>
+    <h1>문제 기록</h1>
+    <ul style="list-style-type: none">
+      <li>문제 묶음 번호: {{ result[0] }}</li>
+      <br />
+      <li>1: {{ result[4] }}</li>
+      <br />
+      <li>정답: {{ result[7] }}</li>
+      <br />
+      <li>2: {{ result[5] }}</li>
+      <br />
+      <li>정답: {{ result[8] }}</li>
+      <br />
+      <li>3: {{ result[6] }}</li>
+      <br />
+      <li>정답: {{ result[9] }}</li>
+    </ul>
+
+    <!-- input.html 페이지로 돌아가는 버튼 -->
+    <a
+      href="/"
+      style="
+        text-decoration: none;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+      "
+      >돌아가기</a
+    >
+  </body>
+</html>

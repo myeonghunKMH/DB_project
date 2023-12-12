@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>문자열 요약페이지</title>
+  </head>
+  <body>
+    <h1>문자열 요약페이지</h1>
+    <form action="/summarize" method="post">
+      <textarea name="text_to_summarize" placeholder="텍스트 입력"></textarea
+      ><br />
+      <input type="submit" name="action" value="Summarize" />
+      <input type="submit" name="action" value="make a problem" /><br /><br />
+      <p>문제id 입력 [1~{{ num }}]</p>
+      <textarea name="index_to_find" placeholder="1,2,..."></textarea>
+      <input type="submit" name="action" value="find problem" />
+    </form>
+  </body>
+</html>

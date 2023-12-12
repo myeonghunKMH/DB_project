@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>요약 결과</title>
+  </head>
+  <body>
+    <h1>빈칸 문제</h1>
+    {% for text in problem_text %}
+    <p>{{ text }}</p>
+    {% endfor %}
+
+    <form action="/problem" method="post">
+      <textarea name="text_to_problem"></textarea><br />
+      <input type="submit" name="action" value="submit" />
+    </form>
+    <p>쉼표로 구분된 답을 작성하세요 ex A1,A2,A3</p>
+    <!-- input.html 페이지로 돌아가는 버튼 -->
+    <a
+      href="/"
+      style="
+        text-decoration: none;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+      "
+      >돌아가기</a
+    >
+  </body>
+</html>
